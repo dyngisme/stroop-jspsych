@@ -17,8 +17,7 @@
 
   <script>
     const jsPsych = initJsPsych(
-      {
-        on_finish: function () {
+      {on_finish: function () {
           jsPsych.data.get().localSave("csv", "stroop_data.csv");
         }
       }
